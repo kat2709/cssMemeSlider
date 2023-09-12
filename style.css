@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,27 +12,33 @@ body {
 
 .meme-slider {
   overflow: hidden;
-  width: 1000px;
-  margin: 10px auto 0px;
+  width: 850px;
+  margin: 30px auto;
 }
+
 .images-box {
   overflow: hidden;
   display: flex;
-  width: 1000px;
-  height: 600px;
+  width: 850px;
+  height: 500px;
 }
+
 .images-box img {
-  max-width: 1000px;
+  margin: 0px 10px;
+  border: solid 5px white;
+  border-radius: 5px;
+  max-width: 830px;
   width: 100%;
   background-size: contain;
   transition: all 0.1s ease;
 }
+
 .images-box input {
   display: none;
 }
 
 .pagination {
-  margin-top: 10px;
+  margin: 10px;
   display: flex;
   height: 35px;
   justify-content: space-between;
@@ -46,7 +52,7 @@ body {
 
 .text-box {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   height: 35px;
   overflow: hidden;
   font-size: 20px;
@@ -75,24 +81,26 @@ body {
   transition: all 0.1s ease;
 }
 
+
+
 /* slider change picture */
 #first-image:checked ~ .image-one {
   transform: translateX(0);
 }
 #second-image:checked ~ .image-two {
-  transform: translateX(-100%);
+  transform: translateX(-102.4%);
 }
 #third-image:checked ~ .image-three {
-  transform: translateX(-200%);
+  transform: translateX(-204.8%);
 }
 #fourth-image:checked ~ .image-four {
-  transform: translateX(-300%);
+  transform: translateX(-307.2%);
 }
 #fifth-image:checked ~ .image-five {
-  transform: translateX(-400%);
+  transform: translateX(-409.6%);
 }
 #sixth-image:checked ~ .image-six {
-  transform: translateX(-500%);
+  transform: translateX(-512%);
 }
 
 /* style of pagination circle */
@@ -100,8 +108,16 @@ body {
   ~ .pagination
   .circle-pagination
   .label-style1 {
-  background-color: aliceblue;
+  background-color: rgb(192, 182, 182);
   border: solid rgb(50, 60, 195) 3px;
+}
+
+.images-box:has(#first-image:checked)
+  ~ .pagination
+  .circle-pagination
+  .label-style1:hover {
+  background-color: rgb(192, 182, 182);
+  border: solid rgb(255, 255, 255) 3px;
 }
 
 .images-box:has(#second-image:checked)
@@ -112,12 +128,28 @@ body {
   border: solid rgb(50, 60, 195) 3px;
 }
 
+.images-box:has(#second-image:checked)
+  ~ .pagination
+  .circle-pagination
+  .label-style2:hover {
+    background-color: rgb(192, 182, 182);
+    border: solid rgb(255, 255, 255) 3px;
+}
+
 .images-box:has(#third-image:checked)
   ~ .pagination
   .circle-pagination
   .label-style3 {
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
+}
+
+.images-box:has(#third-image:checked)
+  ~ .pagination
+  .circle-pagination
+  .label-style3:hover {
+    background-color: rgb(192, 182, 182);
+    border: solid rgb(255, 255, 255) 3px;
 }
 
 .images-box:has(#fourth-image:checked)
@@ -128,6 +160,14 @@ body {
   border: solid rgb(50, 60, 195) 3px;
 }
 
+.images-box:has(#fourth-image:checked)
+  ~ .pagination
+  .circle-pagination
+  .label-style4:hover {
+    background-color: rgb(192, 182, 182);
+    border: solid rgb(255, 255, 255) 3px;
+}
+
 .images-box:has(#fifth-image:checked)
   ~ .pagination
   .circle-pagination
@@ -136,12 +176,28 @@ body {
   border: solid rgb(50, 60, 195) 3px;
 }
 
+.images-box:has(#fifth-image:checked)
+  ~ .pagination
+  .circle-pagination
+  .label-style5:hover {
+    background-color: rgb(192, 182, 182);
+    border: solid rgb(255, 255, 255) 3px;
+}
+
 .images-box:has(#sixth-image:checked)
   ~ .pagination
   .circle-pagination
   .label-style6 {
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
+}
+
+.images-box:has(#sixth-image:checked)
+  ~ .pagination
+  .circle-pagination
+  .label-style6:hover {
+    background-color: rgb(192, 182, 182);
+    border: solid rgb(255, 255, 255) 3px;
 }
 
 /* change text */
@@ -166,4 +222,5 @@ body {
 .images-box:has(#sixth-image:checked) ~ .pagination .text-box .text6 {
   transform: translateY(-625%);
 }
+
 
