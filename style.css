@@ -38,7 +38,7 @@ body {
 }
 
 .pagination {
-  margin: 10px;
+  margin: 20px;
   display: flex;
   height: 35px;
   justify-content: space-between;
@@ -48,6 +48,8 @@ body {
   display: flex;
   justify-content: right;
   margin: 5px;
+  width: 120px;
+  height: 30px;
 }
 
 .text-box {
@@ -65,17 +67,27 @@ body {
   background-color: rgb(192, 182, 182);
 }
 
-.circle-pagination label {
-  height: 10px;
-  width: 10px;
+.circle-pagination label{
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.circle-pagination label span{
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
   border: solid rgb(50, 60, 195) 3px;
   background-color: rgb(50, 60, 195);
   cursor: pointer;
-  margin: 5px;
+  
 }
 
-.circle-pagination label:hover {
+.circle-pagination label span:hover {
   background-color: rgb(255, 255, 255);
   border: solid rgb(255, 255, 255) 3px;
   transition: all 0.1s ease;
@@ -107,7 +119,7 @@ body {
 .images-box:has(#first-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style1 {
+  .label-style1 .span1{
   background-color: rgb(192, 182, 182);
   border: solid rgb(50, 60, 195) 3px;
 }
@@ -115,7 +127,7 @@ body {
 .images-box:has(#first-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style1:hover {
+  .label-style1 .span1:hover {
   background-color: rgb(192, 182, 182);
   border: solid rgb(255, 255, 255) 3px;
 }
@@ -123,7 +135,7 @@ body {
 .images-box:has(#second-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style2 {
+  .label-style2 .span2{
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
 }
@@ -131,7 +143,7 @@ body {
 .images-box:has(#second-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style2:hover {
+  .label-style2 .span2:hover {
     background-color: rgb(192, 182, 182);
     border: solid rgb(255, 255, 255) 3px;
 }
@@ -139,7 +151,7 @@ body {
 .images-box:has(#third-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style3 {
+  .label-style3 .span3{
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
 }
@@ -147,7 +159,7 @@ body {
 .images-box:has(#third-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style3:hover {
+  .label-style3 .span3:hover {
     background-color: rgb(192, 182, 182);
     border: solid rgb(255, 255, 255) 3px;
 }
@@ -155,7 +167,7 @@ body {
 .images-box:has(#fourth-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style4 {
+  .label-style4 .span4{
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
 }
@@ -163,7 +175,7 @@ body {
 .images-box:has(#fourth-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style4:hover {
+  .label-style4 .span4:hover {
     background-color: rgb(192, 182, 182);
     border: solid rgb(255, 255, 255) 3px;
 }
@@ -171,7 +183,7 @@ body {
 .images-box:has(#fifth-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style5 {
+  .label-style5 .span5{
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
 }
@@ -179,7 +191,7 @@ body {
 .images-box:has(#fifth-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style5:hover {
+  .label-style5 .span5:hover {
     background-color: rgb(192, 182, 182);
     border: solid rgb(255, 255, 255) 3px;
 }
@@ -187,7 +199,7 @@ body {
 .images-box:has(#sixth-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style6 {
+  .label-style6 .span6{
   background-color: aliceblue;
   border: solid rgb(50, 60, 195) 3px;
 }
@@ -195,7 +207,7 @@ body {
 .images-box:has(#sixth-image:checked)
   ~ .pagination
   .circle-pagination
-  .label-style6:hover {
+  .label-style6 .span6:hover {
     background-color: rgb(192, 182, 182);
     border: solid rgb(255, 255, 255) 3px;
 }
