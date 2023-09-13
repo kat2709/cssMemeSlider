@@ -275,10 +275,11 @@ label:hover > span {
 
   .text-box {
     width: 100%;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    height: 1.1rem;
   }
 
-  @media screen and (max-width: 29rem){
+  @media screen and (max-width: 30rem){
     .meme-slider {
       width: 21.2rem;
       height: 33rem;
