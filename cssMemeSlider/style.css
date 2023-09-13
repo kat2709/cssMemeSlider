@@ -6,18 +6,18 @@
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background: rgb(0, 0, 0);
 }
 
 .meme-slider {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 51.3rem;
   margin: 2rem auto;
 }
 
 .images-box {
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   width: 53rem;
   height: 31rem;
@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 1.5rem;
-  overflow: hidden;
+  overflow-y: hidden;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -258,7 +258,7 @@ label:hover > span {
 
   .images-box {
     width: 29.375rem;
-    height: 50%;
+    height: 19rem;
   }
 
   .images-box img {
@@ -286,7 +286,7 @@ label:hover > span {
   
     .images-box {
       width: 22rem;
-      height: 50%;
+      height: 17rem;
     }
   
     .images-box img {
