@@ -6,7 +6,7 @@
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   background: rgb(0, 0, 0);
 }
 
@@ -267,8 +267,8 @@ label:hover > span {
   }
 
   .pagination {
-    margin: 0.625rem 0.5rem;
-    height: 5.938rem;
+    margin: 0rem 0.5rem;
+    height: 5rem;
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -286,7 +286,7 @@ label:hover > span {
     }
   
     .images-box {
-      width: 22rem;
+      width: 21rem;
       height: 17rem;
     }
   
